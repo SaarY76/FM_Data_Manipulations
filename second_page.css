@@ -1,0 +1,160 @@
+.th-sort-asc::after {
+  content: "\25B4"; /* Black up-pointing triangle */
+}
+
+.th-sort-desc::after {
+  content: "\25BE"; /* Black down-pointing small triangle */
+}
+
+html {
+  background-color: rgb(255, 248, 239);
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+form div {
+  margin-right: 10%;
+  margin-left: 2%;
+}
+
+form label {
+  display: inline-flex; /* Align items in a row */
+  align-items: center; /* Center-align items vertically */
+  margin-right: 0.8rem;
+  white-space: nowrap; /* Prevent wrapping */
+  font-size: smaller;
+  font-weight: bold;
+}
+
+/* Additional Styles for Checkbox */
+input[type="checkbox"] {
+  margin-right: 0.5rem; /* Space between checkbox and label text */
+}
+
+/* Updated table styles */
+table {
+  background-color: rgb(70, 70, 70);
+  color: white;
+  margin-top: 1.2rem;
+  margin-left: auto; /* Center the table */
+  margin-right: auto; /* Center the table */
+  font-size: smaller;
+  border-collapse: collapse; /* Ensure borders are neat */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure the rounded corners are visible */
+}
+
+table th,
+table td {
+  padding: 0.5rem; /* Add some padding in table cells */
+}
+
+#input_submit {
+  font-size: large;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px;
+}
+#input_submit:hover {
+  background-color: rgb(14, 160, 58);
+}
+
+form p {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.toggle-button {
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  color: black; /* Black text (arrow) */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for the arrow */
+  line-height: 1; /* Align with text */
+  vertical-align: middle; /* Vertical alignment with text */
+  padding: 2px 5px; /* Padding around the arrow */
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.toggle-button:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/*  */
+
+.attribute-section {
+  font-size: medium;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Adjust based on your preference */
+  gap: 10px;
+  margin-left: -5px;
+}
+
+.attribute {
+  background-color: rgb(211, 211, 211);
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+select {
+  padding: 3px;
+}
+
+.attribute label {
+  margin-right: 10px; /* Space between label and select box */
+}
+
+/* Styles for select elements based on value */
+.select-blue {
+  background-color: lightblue;
+}
+
+.select-green {
+  background-color: lightgreen;
+}
+
+/* Ensure the p element and attribute section are aligned */
+form p {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly; /* Center the buttons horizontally */
+  padding: 10px 0; /* Add some vertical padding */
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+#reset {
+  font-size: large;
+  padding: 10px 20px;
+  background-color: rgb(20, 162, 218);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px;
+}
+#reset:hover {
+  background-color: rgb(4, 100, 137);
+}
